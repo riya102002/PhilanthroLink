@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic2"
+    tools:context=".NGOScanActivity">
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scanner_view"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        app:autoFocusButtonColor="@color/lavender"
+        app:autoFocusButtonVisible="true"
+        app:flashButtonColor="@color/lavender"
+        app:flashButtonVisible="true"
+        app:maskColor="#6C000000" />
+
+    <TextView
+        android:id="@+id/scanner_textView"
+        android:gravity="center"
+        android:background="@drawable/black_border"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scanner_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="SCAN SOMETHING"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/custNumText"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_below="@id/button_NGOContact"-->
+<!--        android:layout_marginStart="50dp"-->
+<!--        android:layout_marginTop="-159dp"-->
+<!--        android:layout_marginEnd="50dp"-->
+<!--        android:background="@drawable/black_border"-->
+<!--        android:drawableLeft="@drawable/billing_ka_icon"-->
+<!--        android:drawablePadding="8dp"-->
+<!--        android:hint="Customer ID Number"-->
+<!--        android:padding="8dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textColorHint="@color/black" />-->
+
+    <Button
+        android:id="@+id/button_NGOContact"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scanner_textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="100dp"
+        android:text="START VOLUNTEERING" />
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/payment_button"-->
+    <!--        android:layout_width="427dp"-->
+    <!--        android:layout_height="317dp"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_marginStart="61dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:layout_marginEnd="92dp"-->
+    <!--        android:text="MAKE PAYMENT" />-->
+
+</RelativeLayout>

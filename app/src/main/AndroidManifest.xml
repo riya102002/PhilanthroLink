@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PhilanthroLink"
+        tools:targetApi="31">
+        <activity
+            android:name=".ViewNGOReviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewVolunteerReviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NGOStatsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VolunteerDonationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AvailableNGOActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewNGORequestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NGOScanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NGOFeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VolunteerReviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VolunteerProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VolunteerForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NGOProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NGOForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".NGOLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VolunteerLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NGOSignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VolunteerSignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

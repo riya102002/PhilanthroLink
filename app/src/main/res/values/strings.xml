@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PhilanthroLink</string>
+
+    <string-array name="donation">
+        <item>SELECT DONATION TYPE</item>
+        <item>FOOD</item>
+        <item>CLOTHES</item>
+        <item>MONEY</item>
+    </string-array>
+</resources>
